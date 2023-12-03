@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Bulma and Sass Register Form</title>
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    <section>
+        <div class="hero-head">
+            <nav class="navbar has-shadow">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item">
+                            <img src="images/logoZelda.png" width="200" height="auto" alt="Zelda Logo">
+                        </a>
+                        <!-- Navbar Burger Button for Mobile -->
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                            data-target="navbarExample">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <!-- Navbar Menu Section -->
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item">
+                                Home
+                            </a>
+                            <a class="navbar-item">
+                                Characters history
+                            </a>
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a class="navbar-link">
+                                    Characters page
+                                </a>
+                                <div class="navbar-dropdown is-boxed">
+                                    <a class="navbar-item" href="">
+                                        Bokoblin
+                                    </a>
+                                    <a class="navbar-item" href="">
+                                        Link
+                                    </a>
+                                    <a class="navbar-item" href="">
+                                        Zelda
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Button to trigger a modal -->
+                            <button class="js-modal-trigger button is-link ml-2" data-target="modal-js-example"
+                                style="margin-top: 2%;">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+            </nav>
+        </div>
+    </section>
+    <!-- Section for character content -->
+    <section>
+        <div class="content mt-6 pt-6">
+            <!-- Columns for character cards -->
+            <div class="columns is-desktop is-rounded">
+                <!-- Placeholder column for mobile layout -->
+                <div class="column"></div>
+                <!-- Character Container 1 -->
+                <div class="column is-mobile mx-4 is-rounded">
+                    <div class="card">
+                        <div class="card-content is-vcentered">
+                            <div class="content has-text-centered">
+                                <img src="images/link.webp" alt="Imagen de Link">
+                                <h2 class="title">Link</h2>
+                                <p class="has-text-justified">Conocido por su valentía y su
+                                    lucha contra el malvado Ganon para proteger el reino de Hyrule.</p>
+                                <p class="has-text-justified">Link lleva su icónico traje verde y su espada
+                                    maestra,
+                                    la
+                                    cual utiliza
+                                    para enfrentarse a enemigos y resolver
+                                    puzles en su búsqueda por rescatar a la princesa Zelda.</p>
+                                <p class="has-text-justified">Héroe destinado a
+                                    enfrentarse al mal en sus diversas formas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Character Container 2 -->
+                <div class="column is-mobile mx-4 is-rounded">
+                    <div class="card">
+                        <div class="card-content is-vcentered">
+                            <div class="content has-text-centered">
+                                <img src="images/bokoblin.png" alt="Imagen 2">
+                                <h2 class="title">Bokoblin</h2>
+                                <p class="has-text-justified">Conocidos por su apariencia salvaje y su
+                                    naturaleza
+                                    hostil.</p>
+                                <p class="has-text-justified">Suelen habitar en diferentes regiones de
+                                    Hyrule y a
+                                    menudo se enfrentan a Link en su búsqueda por
+                                    detener sus malvados planes.</p>
+                                <p class="has-text-justified">Tienen aspecto grotesco y, a menudo,
+                                    llevan armas improvisadas como palos o espadas rudimentarias.</p>
+                                <p class="has-text-justified">Son encontrados comúnmente en grupos y están
+                                    siempre
+                                    listos para atacar a Link, un rival a temer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Character Container 3 -->
+                <div class="column is-mobile mx-4 is-rounded">
+                    <div class="card">
+                        <div class="card-content is-vcentered">
+                            <div class="content has-text-centered">
+                                <img src="images/zelda.webp" alt="Imagen 3">
+                                <h2 class="title">Zelda</h2>
+                                <p class="has-text-justified">Personaje clave en la serie de videojuegos
+                                    Ella es la princesa del reino de
+                                    Hyrule y desempeña un papel importante en la trama de la serie.</p>
+                                <p class="has-text-justified">A menudo se ve atrapada en situaciones
+                                    peligrosas y
+                                    Link, se esfuerza por rescatarla de
+                                    las garras del malvado Ganon.</p>
+                                <p class="has-text-justified">Es una princesa sabia y compasiva que
+                                    a menudo
+                                    se
+                                    sacrifica para ayudar a los demás.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Placeholder column for mobile layout -->
+                <div class="column"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal Section for Registration Form -->
+    <section>
+        <!-- Modal conector to JS -->
+        <div id="modal-js-example" class="modal">
+            <!-- Modal Background -->
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <!-- Modal Box with Light Background -->
+                <div class="box has-background-white mx-6 px-4" style="border-radius: 5px;">
+                    <!-- Container for the Form in a Card -->
+                    <div class="column is-mobile mx-3">
+                        <div class="card">
+                            <div class=" card-content is-vcentered">
+                                <div class="content">
+                                    <h3
+                                        class="title has-text-centered is-size-5-mobile is-size-3-tablet is-size-3-desktop">
+                                        Register Form
+                                    </h3>
+                                    <div class="field">
+                                        <label class="label">Name</label>
+                                        <div class="control">
+                                            <input class="input" type="text" placeholder="Introduce name">
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <label class="label">Surname</label>
+                                        <div class="control">
+                                            <input class="input" type="text" placeholder="Introduce surname">
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <label class="label">Email</label>
+                                        <div class="control has-icons-left has-icons-right">
+                                            <input class="input is-danger" type="email" name="email"
+                                                placeholder="e.g. alexsmith@gmail.com" required>
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-envelope"></i>
+                                            </span>
+                                            <span class="icon is-small is-right">
+                                                <i class="fas fa-exclamation-triangle"></i>
+                                            </span>
+                                        </div>
+                                        <p class="help is-danger">This email is invalid</p>
+                                    </div>
+
+                                    <div class="field">
+                                        <label class="label">Gender</label>
+                                        <div class="control">
+                                            <div class="select">
+                                                <select>
+                                                    <option selected>Select</option>
+                                                    <option>Male</option>
+                                                    <option>Female</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <label class="label">Username</label>
+                                        <div class="control has-icons-left has-icons-right">
+                                            <input class="input is-success" type="text"
+                                                placeholder="Introduce your username">
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-user"></i>
+                                            </span>
+                                            <span class="icon is-small is-right">
+                                                <i class="fas fa-check"></i>
+                                            </span>
+                                        </div>
+                                        <p class="help is-success">This username is available</p>
+                                    </div>
+
+                                    <div class="field">
+                                        <p class="control has-icons-left">
+                                            <input class="input" type="password" placeholder="Password">
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-lock"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+
+                                    <div class="field">
+                                        <label class="label">Message</label>
+                                        <div class="control">
+                                            <textarea class="textarea" placeholder="Textarea"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <div class="control">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                I agree to the <a href="#">terms and conditions</a>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <div class="control">
+                                            <label class="radio">
+                                                <input type="radio" name="question">
+                                                Yes
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="question">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="field is-grouped">
+                                        <div class="control">
+                                            <button class="button is-link">Submit</button>
+                                        </div>
+                                        <div class="control">
+                                            <button class="button is-link is-light">Cancel</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script Section for External JavaScript -->
+    <script src="main.js"></script>
+</body>
+
+</html>

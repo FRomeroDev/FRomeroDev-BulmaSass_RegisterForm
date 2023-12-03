@@ -1,0 +1,64 @@
+// Set character encoding to UTF-8
+@charset "utf-8";
+
+// Importing Google Font and Font Awesome
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+// Define brand colors
+$blue: #3551ac;
+$nav-text: #393939;
+$nav-color: rgb(239, 238, 238);
+$hover-navbar-items-color: rgb(201, 201, 214);
+$hover-navbar-button: #193aaa;
+$general-background-color: #f9f9f9;
+
+// Update Bulma's global variables
+$family-easy-to-read: "Roboto", sans-serif;
+$widescreen-enabled: false;
+
+// Update Bulma's navbar variables
+$navbar-background-color: $nav-color; // Navigation bar background color
+$navbar-height: 4rem; // Navigation bar height
+$navbar-burger-color: $blue; // Color of the burger icon on mobile devices
+
+$navbar-item-padding: 0.5rem 1rem; // Padding of navigation bar elements
+$navbar-item-color: $nav-text; // Color of navigation bar elements text
+$navbar-item-hover-background-color: $hover-navbar-items-color; // Defines background color when hovering over navigation bar elements
+
+$navbar-dropdown-background-color: $hover-navbar-items-color; // Defines background color of dropdown menu
+$navbar-dropdown-item-hover-background-color: $blue; // Defines background color when hovering over dropdown menu items
+
+// Update Bulma's body and box background color
+$body-background-color: $general-background-color;
+$box-background-color: $general-background-color; // Defines background color of box element
+
+// Update Bulma's cards variables
+$card-background-color: $nav-color; // Defines background color of the cards
+$card-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+$control-border-width: 1px;
+$input-border-color: rgb(167, 167, 167);
+
+// Import only what you need from Bulma
+
+// Imports for all components
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+// Imports for elements componets
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/elements/content.sass";
+// Imports for grid components
+@import "../node_modules/bulma/sass/grid/columns.sass";
+// Imports for layout components
+@import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+// Imports for components group
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/components/modal.sass";
+@import "../node_modules/bulma/sass/components/card.sass";
+// Imports for elements components
+@import "../node_modules/bulma/sass/elements/icon.sass";

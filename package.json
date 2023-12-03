@@ -1,0 +1,22 @@
+{
+  "name": "bulmasass_registerform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sass/styles.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url sass/styles.scss css/styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "css-will-compressed": "sass --watch --style=compressed sass/styles.scss css/styles.css",
+    "start": "npm run css-watch"
+  },
+  "author": "FRomeroDev",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.9.4",
+    "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1"
+  }
+}
